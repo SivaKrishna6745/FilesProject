@@ -16,5 +16,5 @@ json.dump(cars, cars_json, indent=4)  # write the data as a json into the file, 
 cars_json.close()
 
 my_json_string = '[{"name": "Alfa Romeo"}, {"released": "1950"}]'
-incorrect_car = json.loads(my_json_string)
+incorrect_car = json.loads(my_json_string)  # load the string as declared in line 18 and convert into python dictionary (json)
 print(incorrect_car[0]['name'])  # Alfa Romeo
